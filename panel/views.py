@@ -13,3 +13,10 @@ def index(request):
         'events': Event.objects.all()
     }
     return HttpResponse(template.render(context, request))
+
+def add_task(request):
+    title = request.POST.get("title")
+    text = request.POST.get("text")
+
+    task = Task(title=title, text=text, completed=False)
+    task.save()
