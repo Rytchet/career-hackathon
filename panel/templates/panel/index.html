@@ -40,12 +40,17 @@
             <div class="col-4">
                 <h3 class="text-center">Upcoming Events</h3>
                 <div class="list-group">
+<<<<<<< HEAD
+=======
+                    {% for event in events %}
+>>>>>>> 4d3be63bc71042b2d0ea7a7c61c6717543e31fd4
                     <div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
-                            <h5 class="mb-1">Ignite Your Future - Industry-led Tutorials</h5>
-                            <small>2019/02/13</small>
+                            <h5 class="mb-1">{{event.title}}</h5>
+                            <small>{{event.date}}</small>
                         </div>
                         <div class="d-flex w-100 justify-content-between">
+<<<<<<< HEAD
                             <p class="mb-1">As part of the 'Ignite Your Future' event, this session presents industry-led tutorials on GitHub and AWS.</p>
                             <a href="https://careerhub.liv.ac.uk/students/events/Detail/393356/ignite-your-future-industry-le" class="btn btn-info" role="button">Sign Up</a>
                         </div>
@@ -80,19 +85,17 @@
                             <a href="https://careerhub.liv.ac.uk/students/events/Detail/393364/ignite-your-future-networking-" class="btn btn-info" role="button">Sign Up</a>
                         </div>
                     </div>
+=======
+                            <p class="mb-1">{{event.text}}</p>
+                            <a href="google.com" class="btn btn-primary btn-sm ml-5" role="button">Sign Up</a>
+                        </div>
+                    </div>
+                    {% endfor %}
+>>>>>>> 4d3be63bc71042b2d0ea7a7c61c6717543e31fd4
                 </div>
             </div>
         </div>
     </div>
-
-    {% for event in events %}
-    {{event.title}}
-    {{event.text}}
-    {{event.date}}
-    <br>
-    {% endfor %}
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
