@@ -13,3 +13,19 @@ def index(request):
         'events': Event.objects.all()
     }
     return HttpResponse(template.render(context, request))
+
+def add_task(request):
+    title = request.POST.get("title")
+    text = request.POST.get("text")
+
+    task = Task(title=title, text=text, completed=False, points=0)
+    task.save()
+
+    template = loader.get_template('panel/index.html')
+    context = {
+        'tasks': Task.objects.all(),
+        'points': Points.objects.get(id=1),
+        'events': Event.objects.all()
+    }
+
+    return HttpResponse(template.render(context, request))
