@@ -1,10 +1,15 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
+from .models import Task, Points, Event
 
 # Create your views here.
 
 def index(request):
     template = loader.get_template('panel/index.html')
-    context = {}
+    context = {
+        'tasks': Task.objects.all(),
+        'points': Points.objects.get(id=1),
+        'events': Event.objects.all()
+    }
     return HttpResponse(template.render(context, request))
