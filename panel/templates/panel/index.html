@@ -19,7 +19,7 @@
 
         <div class="navbar-nav ml-auto">
             <div class="navbar-brand">
-                C-Bux: 42069
+                C-bucks: {{ points.points }}
             </div>
         </div>
     </div>
@@ -58,6 +58,32 @@
             </a>
         </div>
     </div>
+<<<<<<< HEAD
+=======
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-3">
+                <h3 class="text-center">My Progress</h3>
+                <div class="list-group">
+                    {% for task in tasks %}
+                        <div class="list-group-item">
+                            <h4>{{ task.title }}</h4>
+                            {{ task.text }}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% for event in events %}
+            {{event.title}}
+            {{event.text}}
+            {{event.date}}
+            <br>
+            {% endfor %}
+        </div>
+    </div>
+
+
+>>>>>>> 0dd461af6acc6b97f0a665a4e8cc568b966b20f5
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
