@@ -1,6 +1,6 @@
 # career-hackathon
 
-This is the code our team, JoinCyberSoc, wrote for the Computer Science Society Hackathon, in the "Ignite Your Future" event. (Feb 9, 2019)
+This is the code our team, JoinCyberSoc, wrote for the University of Liverpool Computer Science Society Hackathon, in the "Ignite Your Future" event. (Feb 9, 2019)
 
 It's a system that allows students to earn points (C-Bucks) by completing tasks or going to events, which they could later spend on rewards.
 
